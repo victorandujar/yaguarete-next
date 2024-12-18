@@ -26,11 +26,11 @@ const HeroSection = (): React.ReactElement => {
   return (
     <section
       className="w-screen h-screen bg-cover bg-center bg-no-repeat relative"
-      style={{ backgroundImage: "url('/IMAGENYAGUARETE-01-WEB.webp')" }}
+      style={{ backgroundImage: "url('/images/hero-background.webp')" }}
     >
       <div className="flex w-full items-center flex-col relative">
         <Image
-          src={"/sol.svg"}
+          src={"/icons/sol.svg"}
           alt=""
           width={400}
           height={400}
@@ -44,7 +44,7 @@ const HeroSection = (): React.ReactElement => {
           }`}
         >
           <Image
-            src={"/YAGUARETETITULO.svg"}
+            src={"/icons/YAGUARETETITULO.svg"}
             alt=""
             width={800}
             height={600}

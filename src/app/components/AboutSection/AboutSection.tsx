@@ -3,35 +3,56 @@ import Image from "next/image";
 
 const AboutSection = (): React.ReactElement => {
   const t = useTranslations("AboutSection");
+
   return (
-    <section className="border-b border-black w-full flex h-fit">
-      <div className="px-40 py-20 w-2/3 border-r border-black flex flex-col">
-        <h2 className="font-ppHatton text-black text-xxl tracking-[2px] p-0 m-0">
-          {t("title")} YAGUARETÉ
-        </h2>
-        <span className="font-ppHatton text-black text-l">
-          ESOTERIC & SUSTAINABLE CAFÉ
-        </span>
-        <section className="flex flex-col gap-10 text-black w-3/5 pt-16 text-m">
-          <span>{t("top-text")}</span>
-          <span>{t("bottom-text")}</span>
+    <div className="w-full border-b border-black">
+      <section className="px-80 py-20">
+        <section className="flex items-start w-full pr-40 gap-10">
+          <div className="flex flex-col gap-10 flex-1">
+            <h2 className="font-ppHatton text-black text-xxl tracking-[2px] p-0 m-0">
+              {t("title")}
+            </h2>
+            <span className="font-ppHatton text-black text-l">
+              {t("subtitle")}
+            </span>
+            <span className="text-black text-m w-[75%]">{t("top-text")}</span>
+          </div>
+          <div className="flex justify-center items-center w-[500px] h-[500px]">
+            <Image
+              src="/icons/sun-about.svg"
+              alt="Esoteric sun. About section."
+              width={500}
+              height={400}
+              className="object-contain"
+            />
+          </div>
         </section>
-        <section className="font-ppHatton text-black flex flex-col gap-3 pt-20 text-ml">
-          <span className="tracking-[2px]">{t("close-text-top")} </span>
-          <span>{t("close-text-bottom")}</span>
+        <section className="flex items-center justify-between w-full pr-40 gap-32  ">
+          <div className="flex justify-center items-center w-[500px] h-[400px] pb-48">
+            <Image
+              src="/icons/star-about.svg"
+              alt="Esoteric sun. About section."
+              width={500}
+              height={400}
+              className="object-contain"
+            />
+          </div>
+          <div className="flex justify-end gap-10 flex-1 pb-48">
+            <span className="text-black text-m  w-[80%]">
+              {t("bottom-text")}
+            </span>
+          </div>
         </section>
-      </div>
-      <div className="w-1/3 flex justify-center p-10">
-        <div className="w-full h-full bg-white p-2 relative">
-          <Image
-            src={"/jungle.jpg"}
-            alt="About photo. Jungle leaves"
-            layout="fill"
-            className="object-cover rounded-lg"
-          />
+        <div className="w-full flex flex-col items-center justify-center">
+          <span className="font-ppHatton font-bold text-black text-center text-ml tracking-[1px]">
+            {t("close-text-top")}
+          </span>
+          <span className="font-ppHatton font-bold text-black text-center text-ml tracking-[1px]">
+            {t("close-text-bottom")}
+          </span>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 

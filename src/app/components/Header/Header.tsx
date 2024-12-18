@@ -21,7 +21,12 @@ const Header = (): React.ReactElement => {
   return (
     <header className="fixed top-0 left-0 z-50 flex w-full items-center justify-between p-4 bg-background text-black">
       <button onClick={handleLogoClick}>
-        <Image src="/logo-jaguar.png" height={50} alt="logo" width={50} />
+        <Image
+          src="/images/logo-jaguar.png"
+          height={50}
+          alt="logo"
+          width={50}
+        />
       </button>
       <div className="flex gap-16">
         <ul className="flex gap-20">
