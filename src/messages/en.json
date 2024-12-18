@@ -3,5 +3,9 @@
     "events": "Events",
     "shop": "Shop",
     "menu": "Menu / Cafe"
+  },
+  "HeroSection": {
+    "feed": "Feed your",
+    "body-soul": "body & soul"
   }
 }

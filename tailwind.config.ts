@@ -21,6 +21,9 @@ const config: Config = {
         ms: "var(--font-MS)",
         mss: "var(--font-MSS)",
       },
+      letterSpacing: {
+        "5": "8px",
+      },
     },
   },
   plugins: [],
