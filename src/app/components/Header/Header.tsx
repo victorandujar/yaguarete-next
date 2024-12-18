@@ -11,9 +11,18 @@ import { FaShoppingCart } from "react-icons/fa";
 const Header = (): React.ReactElement => {
   const t = useTranslations("Header");
 
+  const handleLogoClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <header className="fixed top-0 left-0 z-50 flex w-full items-center justify-between p-4 bg-background text-black">
-      <Image src="/logo-jaguar.png" height={50} alt="logo" width={50} />
+      <button onClick={handleLogoClick}>
+        <Image src="/logo-jaguar.png" height={50} alt="logo" width={50} />
+      </button>
       <div className="flex gap-16">
         <ul className="flex gap-20">
           {headerSections.map((section: HeaderSection) => (

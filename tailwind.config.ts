@@ -17,12 +17,17 @@ const config: Config = {
         xl: "var(--font-XL)",
         l: "var(--font-L)",
         m: "var(--font-M)",
+        ml: "var(--font-ML)",
         s: "var(--font-S)",
         ms: "var(--font-MS)",
         mss: "var(--font-MSS)",
       },
       letterSpacing: {
         "5": "8px",
+      },
+      fontFamily: {
+        sans: "var(--font-dmSans)",
+        ppHatton: ["PPHatton", "sans-serif"],
       },
     },
   },
