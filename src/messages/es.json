@@ -3,5 +3,9 @@
     "events": "Eventos",
     "shop": "Tienda",
     "menu": "Menú / Café"
+  },
+  "HeroSection": {
+    "feed": "Alimenta tu",
+    "body-soul": "cuerpo y alma"
   }
 }
