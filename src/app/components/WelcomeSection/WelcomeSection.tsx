@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-const AboutSection = (): React.ReactElement => {
+const WelcomeSection = (): React.ReactElement => {
   const t = useTranslations("AboutSection");
   return (
     <section className="border-b border-black w-full flex h-fit">
@@ -35,4 +35,4 @@ const AboutSection = (): React.ReactElement => {
   );
 };
 
-export default AboutSection;
+export default WelcomeSection;
