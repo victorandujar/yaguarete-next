@@ -12,7 +12,7 @@ const Header = (): React.ReactElement => {
   const t = useTranslations("Header");
 
   return (
-    <header className="sticky top-0 z-50 flex items-center justify-between p-4 bg-background  text-black">
+    <header className="fixed top-0 left-0 z-50 flex w-full items-center justify-between p-4 bg-background text-black">
       <Image src="/logo-jaguar.png" height={50} alt="logo" width={50} />
       <div className="flex gap-16">
         <ul className="flex gap-20">
@@ -27,7 +27,6 @@ const Header = (): React.ReactElement => {
             </li>
           ))}
         </ul>
-        {/* <FaShoppingCart size={20} /> */}
         <CustomSelect />
       </div>
     </header>

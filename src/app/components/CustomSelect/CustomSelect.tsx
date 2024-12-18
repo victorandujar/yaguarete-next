@@ -50,7 +50,7 @@ export default function CustomSelect() {
         {selected}
       </button>
       {isOpen && (
-        <ul className="absolute bg-background text-s mt-2 shadow-md">
+        <ul className="absolute bg-background text-sm mt-2 shadow-md w-14">
           {options.map((option) => (
             <li
               key={option.value}
