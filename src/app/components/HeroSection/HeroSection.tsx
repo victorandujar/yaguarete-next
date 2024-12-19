@@ -32,7 +32,7 @@ const HeroSection = (): React.ReactElement => {
         <Image
           src={"/icons/sol.svg"}
           alt=""
-          width={500}
+          width={400}
           height={400}
           className={`absolute top-32 transition-opacity duration-1000 ${
             showSun ? "opacity-100" : "opacity-0"
@@ -46,17 +46,17 @@ const HeroSection = (): React.ReactElement => {
           <Image
             src={"/icons/YAGUARETETITULO.svg"}
             alt=""
-            width={1200}
+            width={900}
             height={600}
             className="relative"
           />
-          <span className="tracking-[10px] text-background uppercase absolute top-72">
+          <span className="tracking-[10px] text-background uppercase absolute top-56">
             · esoteric cafe ·
           </span>
         </div>
       </div>
       <section
-        className={`flex items-center justify-around absolute bottom-56 w-full transition-opacity duration-1000 ${
+        className={`flex items-center justify-around absolute bottom-16 w-full transition-opacity duration-1000 ${
           showFeedText ? "opacity-100" : "opacity-0"
         }`}
       >

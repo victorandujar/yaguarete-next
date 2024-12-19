@@ -5,14 +5,14 @@ const WelcomeSection = (): React.ReactElement => {
   const t = useTranslations("WelcomeSection");
   return (
     <section className="border-b border-black w-full flex h-fit">
-      <div className="px-80 py-48 w-2/3 border-r border-black flex flex-col">
-        <h2 className="font-ppHatton text-black text-xxl tracking-[2px] p-0 m-0">
+      <div className="px-80 py-32 w-2/3 border-r border-black flex flex-col">
+        <h2 className="font-ppHatton text-black text-xl tracking-[2px] p-0 m-0">
           {t("title")} YAGUARETÉ
         </h2>
-        <span className="font-ppHatton text-black text-l">
+        <span className="font-ppHatton text-black text-ml">
           ESOTERIC & SUSTAINABLE CAFÉ
         </span>
-        <section className="flex flex-col gap-10 text-black w-4/5 pt-16 text-ml font-light">
+        <section className="flex flex-col gap-10 text-black pt-16 text-m font-light">
           <span>{t("top-text")}</span>
           <span>{t("bottom-text")}</span>
         </section>
@@ -22,7 +22,7 @@ const WelcomeSection = (): React.ReactElement => {
         </section>
       </div>
       <div className="w-1/3 flex justify-center p-10">
-        <div className="w-full h-full bg-white p-2 relative">
+        <div className="w-full h-full  relative">
           <Image
             src={"/images/jungle.jpg"}
             alt="About photo. Jungle leaves"
