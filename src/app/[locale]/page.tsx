@@ -3,6 +3,7 @@ import HeroSection from "../components/HeroSection/HeroSection";
 import AboutSection from "../components/AboutSection/AboutSection";
 import CallToAction from "../components/CallToAction/CallToAction";
 import InformationSection from "../components/InformationSection/InformationSection";
+import MainFooter from "../components/MainFooter/MainFooter";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <AboutSection />
       <CallToAction />
       <InformationSection />
+      <MainFooter />
     </main>
   );
 }
