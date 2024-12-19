@@ -6,7 +6,6 @@ import Image from "next/image";
 import CustomSelect from "../CustomSelect/CustomSelect";
 import { useTranslations } from "next-intl";
 import { HeaderSection } from "@/interfaces/Header";
-import { FaShoppingCart } from "react-icons/fa";
 
 const Header = (): React.ReactElement => {
   const t = useTranslations("Header");
@@ -19,7 +18,7 @@ const Header = (): React.ReactElement => {
   };
 
   return (
-    <header className="fixed top-0 left-0 z-50 flex w-full items-center justify-between px-10 py-4 bg-background text-black">
+    <header className="fixed top-0 left-0 z-50 flex w-full items-center justify-between px-10 py-2 bg-background text-black">
       <button onClick={handleLogoClick}>
         <Image
           src="/images/logo-jaguar.png"
