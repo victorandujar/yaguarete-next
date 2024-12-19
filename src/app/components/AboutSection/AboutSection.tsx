@@ -15,7 +15,9 @@ const AboutSection = (): React.ReactElement => {
             <span className="font-ppHatton text-black text-l">
               {t("subtitle")}
             </span>
-            <span className="text-black text-m w-[75%]">{t("top-text")}</span>
+            <span className="text-black text-ml w-[75%] font-light">
+              {t("top-text")}
+            </span>
           </div>
           <div className="flex justify-center items-center w-[500px] h-[500px]">
             <Image
@@ -38,7 +40,7 @@ const AboutSection = (): React.ReactElement => {
             />
           </div>
           <div className="flex justify-end gap-10 flex-1 pb-48">
-            <span className="text-black text-m  w-[80%]">
+            <span className="text-black text-ml font-light  w-[80%]">
               {t("bottom-text")}
             </span>
           </div>
