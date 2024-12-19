@@ -1,0 +1,36 @@
+{
+  "Header": {
+    "events": "Eventos",
+    "shop": "Tienda",
+    "menu": "Menú / Café"
+  },
+  "HeroSection": {
+    "feed": "Alimenta tu",
+    "body-soul": "cuerpo y alma"
+  },
+  "WelcomeSection": {
+    "title": "Bienvenido a",
+    "top-text": "En el corazón de la selva, donde los árboles susurran historias antiguas y el sol danza entre las hojas, nace Yaguareté: un refugio místico para el alma y los sentidos. Inspirado en la fuerza y sabiduría del jaguar, este espacio es un portal hacia la calma, la introspección y la conexión con lo esencial.",
+    "bottom-text": "Aquí, cada aroma, cada sabor y cada momento están impregnados de la magia de la naturaleza. Te invitamos a dejar atrás el ruido del mundo y a redescubrir el poder del ahora, mientras el espíritu del jaguar te guía en un viaje único.",
+    "close-text-top": "Siéntate | Respira | Disfruta",
+    "close-text-bottom": "LA SELVA TE ESPERA."
+  },
+  "AboutSection": {
+    "title": "Quién somos",
+    "subtitle": "Donde lo esotérico y la naturaleza se encuentran.",
+    "top-text": "Yaguareté nace de un sueño compartido, tejido entre la selva y el alma. La unión de dos amores: el de una persona fascinada por lo esotérico, lo místico y lo intangible, y el de otra profundamente conectada con la naturaleza, su fuerza y su calma.",
+    "bottom-text": "Este espacio fue concebido como un refugio donde estas dos energías se entrelazan. Inspirado en el jaguar, guardián de lo sagrado en las culturas ancestrales, Yaguareté es un lugar de transformación, conexión y descanso. Aquí, el espíritu del jaguar y el sol de la selva nos recuerdan que somos uno con el universo, y que la verdadera magia ocurre cuando nos detenemos a escuchar.",
+    "close-text-top": "Yaguareté no es solo un café.",
+    "close-text-bottom": "Es una experiencia, un encuentro, un susurro de la selva que te invita a volver a ti."
+  },
+  "CallToAction": {
+    "title": "Alimenta tu cuerpo y tu alma bajo el sol de la selva.",
+    "top-text": "En Yaguareté, cada visita es un viaje: disfruta de nuestra comida deliciosa, bebidas con alma y eventos que celebran la conexión con la naturaleza y lo esotérico.",
+    "close-text-top": "Ven, comparte, y déjate inspirar.",
+    "close-text-bottom": "La magia de la selva te espera."
+  },
+  "Information": {
+    "contact": "Contacto",
+    "newsletter": "Newsletter"
+  }
+}
