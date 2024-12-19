@@ -1,4 +1,5 @@
 import Header from "../Header/Header";
+import ReusableLowerFooter from "../ReusableLowerFooter/ReusableLowerFooter";
 
 interface LayoutProps {
   children: React.ReactNode | React.ReactNode[];
@@ -11,6 +12,7 @@ export async function Layout({
     <div>
       <Header />
       <div className="flex justify-center">{children}</div>
+      <ReusableLowerFooter />
     </div>
   );
 }
