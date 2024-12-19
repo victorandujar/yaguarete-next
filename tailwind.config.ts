@@ -28,6 +28,7 @@ const config: Config = {
       fontFamily: {
         sans: "var(--font-dmSans)",
         ppHatton: ["PPHatton", "sans-serif"],
+        nunito: "var(--font-nunitoSans)",
       },
     },
   },

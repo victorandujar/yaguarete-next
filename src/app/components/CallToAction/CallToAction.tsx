@@ -37,9 +37,9 @@ const CallToAction = (): React.ReactElement => {
 
   return (
     <section className="border-b border-black w-full flex justify-center h-fit">
-      <div className="w-1/3 flex flex-col justify-center px-40 py-20">
+      <div className="w-1/3 flex flex-col justify-center px-40 py-24">
         <div className="relative flex flex-col items-center gap-6 min-h-[500px]">
-          <div className="w-full h-full p-2 relative flex flex-col items-center justify-center gap-16 min-h-[500px]">
+          <div className="w-full h-full p-2 relative flex flex-col items-center justify-center gap-16 min-h-[700px]">
             <Image
               src={images[currentImageIndex].src}
               alt="About photo. Jungle leaves"
@@ -47,11 +47,11 @@ const CallToAction = (): React.ReactElement => {
               className="object-cover rounded-lg"
             />
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-2 pt-7">
             {images.map((image: CallToActionImage, index: number) => (
               <button
                 key={image.id}
-                className={`w-3 h-3 rounded-full border-2 border-gray-500 ${
+                className={`w-8 h-2 rounded-3xl border-2 border-gray-500 ${
                   index === currentImageIndex ? "bg-black" : "bg-gray-300"
                 }`}
                 onClick={() => handleOnClick(index)}
@@ -60,14 +60,13 @@ const CallToAction = (): React.ReactElement => {
           </div>
         </div>
       </div>
-      <div className="p-20 w-1/2 border-l border-black flex flex-col">
-        <span className="font-ppHatton text-black text-l">{t("title")}</span>
-        <section className="flex flex-col gap-10 text-black w-4/5 pt-16 text-xl font-light">
-          <span>{t("top-text")}</span>
+      <div className="p-20 py-10 w-1/2 border-l border-black flex flex-col justify-between ">
+        <section className="flex flex-col gap-10 text-black w-4/5 pt-16 ">
+          <span className="font-ppHatton text-black text-l">{t("title")}</span>
+          <span className="text-xl font-light">{t("top-text")}</span>
         </section>
-        <section className="font-ppHatton text-black flex flex-col gap-3 pt-20 text-ml">
-          <span className="tracking-[2px]">{t("close-text-top")} </span>
-          <span>{t("close-text-bottom")}</span>
+        <section className="font-ppHatton text-black flex flex-col gap-3 pt-20 tracking-[2px] pb-32">
+          <span className="text-l">{t("close-text-top")} </span>
         </section>
       </div>
     </section>
