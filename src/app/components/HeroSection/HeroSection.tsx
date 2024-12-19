@@ -25,16 +25,16 @@ const HeroSection = (): React.ReactElement => {
 
   return (
     <section
-      className="w-screen h-screen bg-cover bg-center bg-no-repeat relative"
+      className="w-screen h-screen bg-cover bg-center bg-no-repeat relative pt-24"
       style={{ backgroundImage: "url('/images/hero-background.webp')" }}
     >
-      <div className="flex w-full items-center flex-col relative">
+      <div className="flex w-full items-center flex-col relative ">
         <Image
           src={"/icons/sol.svg"}
           alt=""
-          width={400}
+          width={500}
           height={400}
-          className={`absolute top-40 transition-opacity duration-1000 ${
+          className={`absolute top-32 transition-opacity duration-1000 ${
             showSun ? "opacity-100" : "opacity-0"
           }`}
         />
@@ -46,11 +46,11 @@ const HeroSection = (): React.ReactElement => {
           <Image
             src={"/icons/YAGUARETETITULO.svg"}
             alt=""
-            width={800}
+            width={1200}
             height={600}
             className="relative"
           />
-          <span className="tracking-[10px] text-background uppercase absolute top-48">
+          <span className="tracking-[10px] text-background uppercase absolute top-72">
             · esoteric cafe ·
           </span>
         </div>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 473 333">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: #f7f4e7;
+      }
+
+      .cls-5 {
+        letter-spacing: .08em;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 34.21px;
+      }
+
+      .cls-6 {
+        letter-spacing: .11em;
+      }
+
+      .cls-7, .cls-3 {
+        letter-spacing: .2em;
+      }
+
+      .cls-4 {
+        letter-spacing: .2em;
+      }
+    </style>
+  </defs>
+  <g>
+    <polygon class="cls-1" points="308.83 220.34 391.5 220.84 308.83 221.34 308.83 220.34 308.83 220.34"/>
+    <polygon class="cls-1" points="308.7 198.63 350.16 188.18 308.96 199.6 308.7 198.63 308.7 198.63"/>
+    <polygon class="cls-1" points="300.02 185 371.13 141.45 300.55 185.85 300.02 185 300.02 185"/>
+    <polygon class="cls-1" points="290.14 167.98 319.83 136.56 290.88 168.66 290.14 167.98 290.14 167.98"/>
+    <polygon class="cls-1" points="275.42 158.31 314.94 87.71 276.29 158.79 275.42 158.31 275.42 158.31"/>
+    <polygon class="cls-1" points="256.83 152.34 266.26 109.69 257.8 152.55 256.83 152.34 256.83 152.34"/>
+    <polygon class="cls-1" points="238.71 148.78 239.21 61.95 239.71 148.78 238.71 148.78 238.71 148.78"/>
+    <polygon class="cls-1" points="218.07 148.91 207.62 109.69 219.03 148.64 218.07 148.91 218.07 148.91"/>
+    <polygon class="cls-1" points="201.22 158.8 161.04 87.71 202.09 158.3 201.22 158.8 201.22 158.8"/>
+    <polygon class="cls-1" points="186.4 168.68 153.94 136.56 187.09 167.96 186.4 168.68 186.4 168.68"/>
+    <polygon class="cls-1" points="175.56 185.85 100.27 141.45 176.06 184.99 175.56 185.85 175.56 185.85"/>
+    <polygon class="cls-1" points="170.23 199.6 124.4 187.86 170.46 198.63 170.23 199.6 170.23 199.6"/>
+    <polygon class="cls-1" points="170.34 221.34 77.41 220.84 170.34 220.34 170.34 221.34 170.34 221.34"/>
+    <path class="cls-1" d="M407.4,220.74c.97,0,.97-1.5,0-1.5s-.97,1.5,0,1.5h0Z"/>
+    <path class="cls-1" d="M423.3,221.73c.97,0,.97-1.5,0-1.5s-.97,1.5,0,1.5h0Z"/>
+    <path class="cls-1" d="M364.66,183.96c.97,0,.97-1.5,0-1.5s-.97,1.5,0,1.5h0Z"/>
+    <path class="cls-1" d="M385.53,135.26c.97,0,.97-1.5,0-1.5s-.97,1.5,0,1.5h0Z"/>
+    <path class="cls-1" d="M400.44,126.31c.97,0,.97-1.5,0-1.5s-.97,1.5,0,1.5h0Z"/>
+    <path class="cls-1" d="M328.88,123.33c.97,0,.97-1.5,0-1.5s-.97,1.5,0,1.5h0Z"/>
+    <path class="cls-1" d="M321.92,69.66c.97,0,.97-1.5,0-1.5s-.97,1.5,0,1.5h0Z"/>
+    <path class="cls-1" d="M331.86,54.75c.97,0,.97-1.5,0-1.5s-.97,1.5,0,1.5h0Z"/>
+    <path class="cls-1" d="M270.24,91.53c.97,0,.97-1.5,0-1.5s-.97,1.5,0,1.5h0Z"/>
+    <path class="cls-1" d="M239.03,48.79c.97,0,.97-1.5,0-1.5s-.97,1.5,0,1.5h0Z"/>
+    <path class="cls-1" d="M239.03,31.89c.97,0,.97-1.5,0-1.5s-.97,1.5,0,1.5h0Z"/>
+    <path class="cls-1" d="M201.65,90.53c.97,0,.97-1.5,0-1.5s-.97,1.5,0,1.5h0Z"/>
+    <path class="cls-1" d="M150.96,70.65c.97,0,.97-1.5,0-1.5s-.97,1.5,0,1.5h0Z"/>
+    <path class="cls-1" d="M144.01,58.73c.97,0,.97-1.5,0-1.5s-.97,1.5,0,1.5h0Z"/>
+    <path class="cls-1" d="M142.02,125.32c.97,0,.97-1.5,0-1.5s-.97,1.5,0,1.5h0Z"/>
+    <path class="cls-1" d="M89.34,136.25c.97,0,.97-1.5,0-1.5s-.97,1.5,0,1.5h0Z"/>
+    <path class="cls-1" d="M73.44,126.31c.97,0,.97-1.5,0-1.5s-.97,1.5,0,1.5h0Z"/>
+    <path class="cls-1" d="M110.21,185.95c.97,0,.97-1.5,0-1.5s-.97,1.5,0,1.5h0Z"/>
+    <path class="cls-1" d="M64.49,221.73c.97,0,.97-1.5,0-1.5s-.97,1.5,0,1.5h0Z"/>
+    <path class="cls-1" d="M47.59,220.74c.97,0,.97-1.5,0-1.5s-.97,1.5,0,1.5h0Z"/>
+  </g>
+  <text class="cls-3" transform="translate(98.99 275.5) scale(.7)"><tspan x="0" y="0">SOL</tspan></text>
+  <text class="cls-4" transform="translate(159.19 275.5)"><tspan x="0" y="0"> </tspan></text>
+  <text class="cls-3" transform="translate(174.65 275.5) scale(.7)"><tspan x="0" y="0">DE</tspan></text>
+  <text class="cls-4" transform="translate(214.74 275.5)"><tspan x="0" y="0"> </tspan></text>
+  <text class="cls-3" transform="translate(230.2 275.5) scale(.7)"><tspan x="0" y="0">LA</tspan></text>
+  <text class="cls-4" transform="translate(269.01 275.5)"><tspan x="0" y="0"> </tspan></text>
+  <text class="cls-2" transform="translate(284.48 275.5) scale(.7)"><tspan class="cls-7" x="0" y="0">SE</tspan><tspan class="cls-5" x="53.33" y="0">L</tspan><tspan class="cls-6" x="74.47" y="0">V</tspan><tspan class="cls-7" x="101.53" y="0">A</tspan></text>
+</svg>
