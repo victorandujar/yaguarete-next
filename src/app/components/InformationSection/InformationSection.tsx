@@ -10,7 +10,7 @@ const InformationSection = (): React.ReactElement => {
   return (
     <section className="flex justify-between text-black px-[340px] ">
       <div className="border-r border-black w-1/3">
-        <section className="h-full flex flex-col gap-10 py-20">
+        <section className="h-full flex flex-col  gap-10 py-20">
           <h3 className="text-xl font-ppHatton">Síguenos</h3>
           <ul className="flex flex-col gap-10">
             {socialMedias.map((social) => (
@@ -29,7 +29,7 @@ const InformationSection = (): React.ReactElement => {
         </section>
       </div>
       <div className="border-r border-black w-1/3 ">
-        <section className="h-full flex flex-col gap-10 py-20 ">
+        <section className="h-full flex flex-col items-start gap-10 py-20 ">
           <h3 className="text-xl font-ppHatton">Visítanos</h3>
           <iframe
             src={environments.googleMap}
@@ -44,7 +44,7 @@ const InformationSection = (): React.ReactElement => {
         <ul className="flex flex-col gap-5">
           {informations.map((info) => (
             <li key={info.id}>
-              <Link href={""} className="uppercase tracking-[2px]">
+              <Link href={""} className="uppercase tracking-[2px] text-ms">
                 {t(info.name)}
               </Link>
             </li>
