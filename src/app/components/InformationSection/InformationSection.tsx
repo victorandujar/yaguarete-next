@@ -28,7 +28,7 @@ const InformationSection = (): React.ReactElement => {
           </ul>
         </section>
       </div>
-      <div className="border-r border-black w-1/3 ">
+      <div className="border-r border-black w-[39%]">
         <section className="h-full flex flex-col items-start gap-10 py-20 ">
           <h3 className="text-xl font-ppHatton">Visítanos</h3>
           <iframe
