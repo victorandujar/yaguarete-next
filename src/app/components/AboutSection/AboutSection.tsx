@@ -6,8 +6,8 @@ const AboutSection = (): React.ReactElement => {
 
   return (
     <div className="w-full border-b border-black">
-      <section className="px-80 py-20 flex flex-col">
-        <section className="flex items-start w-full pr-40 gap-10 relative">
+      <section className="px-80 mobile:px-20 py-20 flex flex-col">
+        <section className="flex items-start w-full pr-40 mobile:pr-0 gap-10 relative">
           <div className="flex flex-col gap-2 flex-1">
             <h2 className="font-ppHatton text-black text-xl tracking-[2px] p-0 m-0">
               {t("title")}
@@ -19,7 +19,7 @@ const AboutSection = (): React.ReactElement => {
               {t("top-text")}
             </span>
           </div>
-          <div className="flex justify-center items-center w-[450px] h-[450px] absolute right-48">
+          <div className="flex justify-center items-center mobile:w-24  w-[450px] h-[450px] absolute right-48">
             <Image
               src="/icons/sun-about.svg"
               alt="Esoteric sun. About section."
@@ -29,8 +29,8 @@ const AboutSection = (): React.ReactElement => {
             />
           </div>
         </section>
-        <section className="flex items-center justify-between w-full pr-40 gap-32 relative">
-          <div className="flex justify-center items-center w-[450px] h-[450px] absolute top-24">
+        <section className="flex items-center justify-between w-full pr-40 mobile:pr-0 gap-32 relative">
+          <div className="flex justify-center items-center mobile:w-24 w-[450px] h-[450px] absolute top-24">
             <Image
               src="/icons/star-about.svg"
               alt="Esoteric sun. About section."

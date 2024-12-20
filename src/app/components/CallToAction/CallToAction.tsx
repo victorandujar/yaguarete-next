@@ -38,7 +38,7 @@ const CallToAction = (): React.ReactElement => {
   return (
     <section className="border-b border-black w-full flex justify-center h-fit">
       <div className="w-1/3 flex flex-col justify-center px-32 py-24">
-        <div className="relative flex flex-col items-center gap-6 min-h-[500px]">
+        <div className="relative flex flex-col items-center gap-6 min-h-[500px] mobile:hidden">
           <div className="w-full h-full p-2 relative flex flex-col items-center justify-center gap-16 min-h-[500px]">
             <Image
               src={images[currentImageIndex].src}

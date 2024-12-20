@@ -42,12 +42,9 @@ const HeroSection = (): React.ReactElement => {
         backgroundImage: isMobile
           ? "url('/images/footer-img.webp')"
           : "url('/images/hero-background.webp')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="flex w-full items-center flex-col relative ">
+      <div className="flex w-full items-center flex-col relative">
         {!isMobile && (
           <Image
             src={"/icons/sol.svg"}
