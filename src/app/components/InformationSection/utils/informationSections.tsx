@@ -10,13 +10,13 @@ export const socialMedias: SocialMedia[] = [
     url: "https://www.instagram.com/yaguarco/",
   },
   {
-    id: 1,
+    id: 2,
     name: "@yaguarco",
     icon: <AiOutlineYoutube size={30} />,
     url: "https://www.youtube.com/@yaguarco",
   },
   {
-    id: 1,
+    id: 3,
     name: "@yaguarco",
     icon: <AiFillTikTok size={30} />,
     url: "https://www.tiktok.com/@yaguarco",

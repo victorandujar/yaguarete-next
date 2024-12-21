@@ -12,8 +12,10 @@ export default function Home() {
       <WelcomeSection />
       <AboutSection />
       <CallToAction />
-      {/* <InformationSection />
-      <MainFooter /> */}
+      <InformationSection />
+      <div className="mobile:hidden">
+        <MainFooter />
+      </div>
     </main>
   );
 }
