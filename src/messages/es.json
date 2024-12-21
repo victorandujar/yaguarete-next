@@ -2,7 +2,8 @@
   "Header": {
     "events": "Eventos",
     "shop": "Tienda",
-    "menu": "Menú / Café"
+    "menu": "Menú / Café",
+    "contact": "Contacto"
   },
   "HeroSection": {
     "feed": "Alimenta tu",
