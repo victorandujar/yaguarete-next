@@ -5,7 +5,7 @@ const AboutSection = (): React.ReactElement => {
   const t = useTranslations("AboutSection");
 
   return (
-    <div className="w-full border-b border-black">
+    <div className="w-full border-b border-black mobile:border-none">
       <section className="px-80 mobile:px-5 py-20 flex flex-col">
         <section className="flex mobile:flex-col items-start mobile:items-center w-full pr-40 mobile:pr-0 gap-10 relative">
           <div className="flex flex-col gap-2 flex-1">

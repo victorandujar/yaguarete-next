@@ -11,8 +11,8 @@ export default function Home() {
       <HeroSection />
       <WelcomeSection />
       <AboutSection />
-      {/* <CallToAction />
-      <InformationSection />
+      <CallToAction />
+      {/* <InformationSection />
       <MainFooter /> */}
     </main>
   );
