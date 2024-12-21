@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 const HeroSection = (): React.ReactElement => {
+  const [backgroundImage, setBackgroundImage] = useState<string>("");
   const [showSun, setShowSun] = useState(false);
   const [showYaguarete, setShowYaguarete] = useState(false);
   const [showFeedText, setShowFeedText] = useState(false);
@@ -13,14 +14,23 @@ const HeroSection = (): React.ReactElement => {
   const t = useTranslations("HeroSection");
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 800);
+    const updateLayout = () => {
+      const isMobileView = window.innerWidth < 800;
+      setIsMobile(isMobileView);
+      setBackgroundImage(
+        isMobileView
+          ? "url('/images/footer-img.webp')"
+          : "url('/images/hero-background.webp')",
+      );
     };
 
-    handleResize();
-    window.addEventListener("resize", handleResize);
+    // Set initial values
+    updateLayout();
 
-    return () => window.removeEventListener("resize", handleResize);
+    // Listen for window resize
+    window.addEventListener("resize", updateLayout);
+
+    return () => window.removeEventListener("resize", updateLayout);
   }, []);
 
   useEffect(() => {
@@ -37,11 +47,9 @@ const HeroSection = (): React.ReactElement => {
 
   return (
     <section
-      className="w-full screen h-screen bg-cover bg-center bg-no-repeat relative pt-24"
+      className="w-full h-screen bg-cover bg-center bg-no-repeat relative pt-24"
       style={{
-        backgroundImage: isMobile
-          ? "url('/images/footer-img.webp')"
-          : "url('/images/hero-background.webp')",
+        backgroundImage,
       }}
     >
       <div className="flex w-full items-center flex-col relative">

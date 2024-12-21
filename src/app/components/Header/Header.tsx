@@ -21,7 +21,7 @@ const Header = (): React.ReactElement => {
   };
 
   return (
-    <header className="fixed top-0 left-0 z-50 flex w-full items-center justify-between px-10 py-2 bg-background text-black">
+    <header className="fixed top-0 left-0 z-50 flex w-full items-center justify-between px-10 mobile:px-5 py-2 bg-background text-black">
       <button onClick={handleLogoClick}>
         <Image
           src="/images/logo-jaguar.png"

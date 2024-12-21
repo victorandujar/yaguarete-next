@@ -67,6 +67,7 @@ const CallToAction = (): React.ReactElement => {
               alt="About photo. Jungle leaves"
               layout="fill"
               className="object-cover rounded-lg"
+              loading="lazy"
             />
           </div>
           <div className="flex gap-2 pt-7">
