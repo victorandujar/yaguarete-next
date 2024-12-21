@@ -30,7 +30,7 @@ const WelcomeSection = (): React.ReactElement => {
           height={50}
           className="hidden mobile:block object-cover rounded-lg"
         />
-        <section className="flex flex-col gap-10 text-black pt-16 mobile:pt-5 text-m font-light px-5">
+        <section className="flex flex-col gap-10 text-black pt-16 mobile:pt-5 text-m font-light mobile:px-5">
           <span className="mobile:text-center">{t("top-text")}</span>
           <span className="mobile:text-center">{t("bottom-text")}</span>
         </section>
@@ -44,6 +44,7 @@ const WelcomeSection = (): React.ReactElement => {
           width={50}
           height={50}
           className="hidden mobile:block object-cover rounded-lg"
+          loading="lazy"
         />
       </div>
       <div className="w-1/3 flex justify-center p-10 mobile:hidden">

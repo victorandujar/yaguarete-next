@@ -39,9 +39,10 @@ const HeroSection = (): React.ReactElement => {
     <section
       className="w-full screen h-screen bg-cover bg-center bg-no-repeat relative pt-24"
       style={{
-        backgroundImage: isMobile
-          ? "url('/images/footer-img.webp')"
-          : "url('/images/hero-background.webp')",
+        backgroundImage:
+          window.innerWidth < 800
+            ? "url('/images/footer-img.webp')"
+            : "url('/images/hero-background.webp')",
       }}
     >
       <div className="flex w-full items-center flex-col relative">
