@@ -2,7 +2,8 @@
   "Header": {
     "events": "Events",
     "shop": "Shop",
-    "menu": "Menu / Cafe"
+    "menu": "Menu / Cafe",
+    "contact": "Contact"
   },
   "HeroSection": {
     "feed": "Feed your",
