@@ -8,8 +8,20 @@ const HeroSection = (): React.ReactElement => {
   const [showSun, setShowSun] = useState(false);
   const [showYaguarete, setShowYaguarete] = useState(false);
   const [showFeedText, setShowFeedText] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   const t = useTranslations("HeroSection");
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 800);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   useEffect(() => {
     const timer1 = setTimeout(() => setShowSun(true), 500);
@@ -25,47 +37,53 @@ const HeroSection = (): React.ReactElement => {
 
   return (
     <section
-      className="w-screen h-screen bg-cover bg-center bg-no-repeat relative pt-24"
-      style={{ backgroundImage: "url('/images/hero-background.webp')" }}
+      className="w-full screen h-screen bg-cover bg-center bg-no-repeat relative pt-24"
+      style={{
+        backgroundImage: isMobile
+          ? "url('/images/footer-img.webp')"
+          : "url('/images/hero-background.webp')",
+      }}
     >
-      <div className="flex w-full items-center flex-col relative ">
-        <Image
-          src={"/icons/sol.svg"}
-          alt=""
-          width={400}
-          height={400}
-          className={`absolute top-32 transition-opacity duration-1000 ${
-            showSun ? "opacity-100" : "opacity-0"
-          }`}
-        />
+      <div className="flex w-full items-center flex-col relative">
+        {!isMobile && (
+          <Image
+            src={"/icons/sol.svg"}
+            alt=""
+            width={isMobile ? 200 : 400}
+            height={400}
+            className={`absolute top-32 transition-opacity duration-1000 ${
+              showSun ? "opacity-100" : "opacity-0"
+            }`}
+          />
+        )}
         <div
-          className={`absolute top-96 flex flex-col items-center transition-opacity duration-1000 ${
+          className={`absolute mobile:top-48 top-96 flex flex-col items-center transition-opacity duration-1000 ${
             showYaguarete ? "opacity-100" : "opacity-0"
           }`}
         >
           <Image
-            src={"/icons/YAGUARETETITULO.svg"}
+            src={
+              isMobile
+                ? "/icons/logo-yaguarete-mobile.svg"
+                : "/icons/logo-yaguarete-desktop.svg"
+            }
             alt=""
-            width={900}
+            width={isMobile ? 200 : 900}
             height={600}
             className="relative"
           />
-          <span className="tracking-[10px] text-background uppercase absolute top-56">
+          <span className="mobile:w-[220px] tracking-[10px] text-background uppercase absolute top-56 mobile:text-s mobile:tracking-[4px] mobile:bg-softGray mobile:py-1 mobile:rounded-2xl mobile:text-black text-center">
             · esoteric cafe ·
           </span>
         </div>
       </div>
       <section
-        className={`flex items-center justify-around absolute bottom-16 w-full transition-opacity duration-1000 ${
+        className={`flex items-center justify-around gap-2 mobile:justify-center absolute bottom-16 w-full transition-opacity duration-1000 tracking-[10px] mobile:tracking-[5px] mobile:text-s ${
           showFeedText ? "opacity-100" : "opacity-0"
         }`}
       >
-        <span className="tracking-[10px] text-background uppercase">
-          {t("feed")}
-        </span>
-        <span className="tracking-[10px] text-background uppercase">
-          {t("body-soul")}
-        </span>
+        <span className="text-background uppercase">{t("feed")}</span>
+        <span className="text-background uppercase">{t("body-soul")}</span>
       </section>
     </section>
   );

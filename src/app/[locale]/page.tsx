@@ -13,7 +13,9 @@ export default function Home() {
       <AboutSection />
       <CallToAction />
       <InformationSection />
-      <MainFooter />
+      <div className="mobile:hidden">
+        <MainFooter />
+      </div>
     </main>
   );
 }
