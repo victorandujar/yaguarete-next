@@ -6,9 +6,12 @@ import Image from "next/image";
 import CustomSelect from "../CustomSelect/CustomSelect";
 import { useTranslations } from "next-intl";
 import { HeaderSection } from "@/interfaces/Header";
+import { useState } from "react";
+import BurguerMenu from "../BurguerMenu/BurguerMenu";
 
 const Header = (): React.ReactElement => {
   const t = useTranslations("Header");
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   const handleLogoClick = () => {
     window.scrollTo({
@@ -27,8 +30,9 @@ const Header = (): React.ReactElement => {
           width={50}
         />
       </button>
-      <div className="flex gap-16">
-        <ul className="flex gap-20">
+
+      <div className="flex gap-16 mobile:gap-8 items-start ">
+        <ul className="flex gap-20 mobile:hidden">
           {headerSections.map((section: HeaderSection) => (
             <li key={section.id}>
               <Link
@@ -41,6 +45,9 @@ const Header = (): React.ReactElement => {
           ))}
         </ul>
         <CustomSelect />
+        <div className="hidden mobile:block">
+          <BurguerMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+        </div>
       </div>
     </header>
   );

@@ -11,6 +11,7 @@ const config: Config = {
         primary: "#6bcbb8",
         secondary: "#005d63",
         tertiary: "#ff8958",
+        softGray: "var(--soft-gray)",
       },
       fontSize: {
         xxl: "var(--font-XXL)",
@@ -29,6 +30,10 @@ const config: Config = {
         sans: "var(--font-dmSans)",
         ppHatton: ["PPHatton", "sans-serif"],
         nunito: "var(--font-nunitoSans)",
+      },
+      screens: {
+        laptop: "1024px", // Definir un breakpoint personalizado
+        mobile: { max: "800px" }, // Otro breakpoint personalizado
       },
     },
   },
