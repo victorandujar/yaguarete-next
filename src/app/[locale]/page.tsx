@@ -10,8 +10,8 @@ export default function Home() {
     <main className="flex flex-col">
       <HeroSection />
       <WelcomeSection />
-      {/* <AboutSection />
-      <CallToAction />
+      <AboutSection />
+      {/* <CallToAction />
       <InformationSection />
       <MainFooter /> */}
     </main>
