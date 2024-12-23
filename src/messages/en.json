@@ -33,5 +33,10 @@
   "Information": {
     "contact": "Contact",
     "newsletter": "Newsletter"
+  },
+  "Menu": {
+    "title": "Our Menu",
+    "subtitle": "Delights born from the earth to awaken your senses",
+    "main-text": "At Yaguareté, every dish and drink reflects our commitment to care and sustainability. We collaborate with local producers who provide us with fresh, authentic, and vibrant ingredients. We believe the magic lies not only in the flavors but also in the stories behind them: from the aroma of freshly brewed coffee to the sweetness of a crepe crafted with regional products."
   }
 }

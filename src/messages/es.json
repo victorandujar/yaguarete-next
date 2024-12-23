@@ -33,5 +33,10 @@
   "Information": {
     "contact": "Contacto",
     "newsletter": "Newsletter"
+  },
+  "Menu": {
+    "title": "Nuestro Menú",
+    "subtitle": "Delicias que nacen de la tierra y despiertan tus sentidos",
+    "main-text": "En Yaguareté, cada plato y bebida refleja nuestro compromiso con el cuidado y la sostenibilidad. Trabajamos de la mano con productores locales, quienes nos proveen ingredientes frescos, auténticos y llenos de vida. Creemos que la magia está tanto en los sabores como en las historias detrás de ellos: desde el aroma de un café recién molido hasta el dulzor de un crepe elaborado con productos de la región."
   }
 }
