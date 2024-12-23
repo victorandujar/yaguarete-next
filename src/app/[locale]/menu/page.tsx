@@ -5,9 +5,9 @@ import TextWithIconSection from "@/app/components/MenuCompos/TextWithIconSection
 
 const MenuPage = (): React.ReactElement => {
   return (
-    <main className="h-full w-screen text-black py-20">
+    <main className="h-full w-screen text-black pt-20">
       <MenuWelcomeSection />
-      <TextWithIconSection />
+      <TextWithIconSection text="top-text" />
       <div className="flex justify-center gap-32 py-32 px-72">
         <MenuDownloadSection
           color={"primary"}
@@ -22,6 +22,7 @@ const MenuPage = (): React.ReactElement => {
           menu_file="/menus/MENÚINGLÉSCOMPLETO.pdf"
         />
       </div>
+      <TextWithIconSection text="bottom-text" />
     </main>
   );
 };
