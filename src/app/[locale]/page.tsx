@@ -1,9 +1,9 @@
-import WelcomeSection from "../components/WelcomeSection/WelcomeSection";
-import HeroSection from "../components/HeroSection/HeroSection";
-import AboutSection from "../components/AboutSection/AboutSection";
-import CallToAction from "../components/CallToAction/CallToAction";
-import InformationSection from "../components/InformationSection/InformationSection";
-import MainFooter from "../components/MainFooter/MainFooter";
+import HeroSection from "../components/HomeCompos/HeroSection/HeroSection";
+import AboutSection from "../components/HomeCompos/AboutSection/AboutSection";
+import CallToAction from "../components/HomeCompos/CallToAction/CallToAction";
+import InformationSection from "../components/HomeCompos/InformationSection/InformationSection";
+import MainFooter from "../components/HomeCompos/MainFooter/MainFooter";
+import WelcomeSection from "../components/HomeCompos/WelcomeSection/WelcomeSection";
 
 export default function Home() {
   return (
