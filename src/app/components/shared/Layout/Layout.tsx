@@ -1,3 +1,4 @@
+import MainFooter from "../../HomeCompos/MainFooter/MainFooter";
 import Header from "../Header/Header";
 import ReusableLowerFooter from "../ReusableLowerFooter/ReusableLowerFooter";
 
@@ -12,6 +13,9 @@ export async function Layout({
     <div>
       <Header />
       <div className="flex justify-center">{children}</div>
+      <div className="mobile:hidden">
+        <MainFooter />
+      </div>
       <ReusableLowerFooter />
     </div>
   );

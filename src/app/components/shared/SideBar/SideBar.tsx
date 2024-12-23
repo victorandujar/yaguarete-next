@@ -6,6 +6,7 @@ import { headerSections } from "../Header/utils/headerSections";
 import { RiCloseLargeFill } from "react-icons/ri";
 import Image from "next/image";
 import { IoIosArrowForward } from "react-icons/io";
+import Link from "next/link";
 
 interface Props {
   isVisible: boolean;
@@ -51,7 +52,7 @@ const SideBar = ({ isVisible, handleMenuOpen }: Props): React.ReactElement => {
         <ul className="flex flex-col gap-5 w-full mt-16 px-4">
           {headerSections.map((section, index) => (
             <li
-              className={`w-full px-2 py-5 border-b border-black last:border-none transform transition-all duration-500 ease-in-out flex items-center justify-between ${
+              className={`w-full px-2 py-5 border-b border-black last:border-none transform transition-all duration-500 ease-in-out  ${
                 animateItems
                   ? "translate-x-0 opacity-100"
                   : "translate-x-20 opacity-0"
@@ -61,8 +62,14 @@ const SideBar = ({ isVisible, handleMenuOpen }: Props): React.ReactElement => {
               }}
               key={section.id}
             >
-              <span className="font-ppHatton text-ml">{t(section.name)}</span>
-              <IoIosArrowForward />
+              <Link
+                href={section.link}
+                className="flex items-center justify-between"
+                onClick={handleMenuOpen}
+              >
+                <span className="font-ppHatton text-ml">{t(section.name)}</span>
+                <IoIosArrowForward />
+              </Link>
             </li>
           ))}
         </ul>

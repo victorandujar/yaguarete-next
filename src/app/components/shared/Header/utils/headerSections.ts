@@ -1,3 +1,4 @@
+import paths from "@/app/utils/paths";
 import { HeaderSection } from "@/interfaces/Header";
 
 export const headerSections: HeaderSection[] = [
@@ -5,7 +6,6 @@ export const headerSections: HeaderSection[] = [
     id: 1,
     name: "events",
     link: "",
-    isVisible: true,
   },
   // {
   //   id: 2,
@@ -15,14 +15,12 @@ export const headerSections: HeaderSection[] = [
   {
     id: 3,
     name: "menu",
-    link: "",
-    isVisible: true,
+    link: paths.menu,
   },
   {
     id: 4,
     name: "contact",
     link: "",
-    isVisible: true,
   },
   // {
   //   id: 5,
