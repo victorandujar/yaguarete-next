@@ -24,7 +24,7 @@ const MenuDownloadSection = ({
   return (
     <div className="flex flex-col items-center gap-8">
       <section
-        className={`${bgColor} h-200 text-white w-96 p-5 flex flex-col items-center justify-between h-[550px]`}
+        className={`${bgColor} h-200 text-white w-96 p-5 flex flex-col items-center justify-between h-[550px] mobile:w-full`}
       >
         <section className="flex flex-col items-center gap-12">
           <div className="flex flex-col items-center relative">

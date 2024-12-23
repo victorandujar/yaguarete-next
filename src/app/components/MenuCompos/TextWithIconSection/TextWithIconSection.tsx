@@ -18,7 +18,7 @@ const TextWithIconSection = ({ text }: Props): React.ReactElement => {
         width={50}
         height={50}
       />
-      <span className="text-center w-1/4 font-ppHatton font-thin pt-16">
+      <span className="text-center w-1/4 font-ppHatton font-thin pt-16 mobile:w-full mobile:px-5">
         {t(text)}
       </span>
     </section>

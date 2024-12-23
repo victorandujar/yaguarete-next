@@ -8,7 +8,7 @@ const MenuPage = (): React.ReactElement => {
     <main className="h-full w-screen text-black pt-20">
       <MenuWelcomeSection />
       <TextWithIconSection text="top-text" />
-      <div className="flex justify-center gap-32 py-32 px-72">
+      <div className="flex justify-center gap-32 py-32 px-72 mobile:flex-col mobile:items-center mobile:px-0">
         <MenuDownloadSection
           color={"primary"}
           title="Menú"
