@@ -8,16 +8,25 @@ import { useTranslations } from "next-intl";
 import { HeaderSection } from "@/interfaces/Header";
 import { useState } from "react";
 import BurguerMenu from "../BurguerMenu/BurguerMenu";
+import { useParams, usePathname, useRouter } from "next/navigation";
 
 const Header = (): React.ReactElement => {
   const t = useTranslations("Header");
+  const path = usePathname();
+  const router = useRouter();
+  const { locale } = useParams();
+
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   const handleLogoClick = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    if (path === "/") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    } else {
+      router.push(`/${locale}`);
+    }
   };
 
   return (

@@ -3,7 +3,7 @@
 import { RiCloseLargeFill } from "react-icons/ri";
 import { RxHamburgerMenu } from "react-icons/rx";
 import SideBar from "../SideBar/SideBar";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 interface Props {
   isMenuOpen: boolean;

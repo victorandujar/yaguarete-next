@@ -2,8 +2,8 @@ import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { DM_Sans, Nunito_Sans } from "next/font/google";
 import { getMessages } from "../helpers/getMessages";
-import { Layout } from "../components/Layout/Layout";
 import "../globals.css";
+import { Layout } from "../components/shared/Layout/Layout";
 
 const dm_sans = DM_Sans({
   subsets: ["latin"],

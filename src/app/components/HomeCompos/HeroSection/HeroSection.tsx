@@ -24,10 +24,8 @@ const HeroSection = (): React.ReactElement => {
       );
     };
 
-    // Set initial values
     updateLayout();
 
-    // Listen for window resize
     window.addEventListener("resize", updateLayout);
 
     return () => window.removeEventListener("resize", updateLayout);
