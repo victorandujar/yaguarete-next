@@ -5,7 +5,7 @@ const MenuWelcomeSection = (): React.ReactElement => {
   const t = useTranslations("Menu");
 
   return (
-    <section className="text-black border-y border-black flex justify-between w-full px-80 ">
+    <section className="border-y border-black flex justify-between w-full px-80 ">
       <section className="flex flex-col justify-start gap-10 font-ppHatton w-2/5 py-24">
         <div>
           <h2 className="text-xl">{t("title")}</h2>
