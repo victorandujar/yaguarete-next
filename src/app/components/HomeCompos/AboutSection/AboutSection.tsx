@@ -33,62 +33,70 @@ const AboutSection = (): React.ReactElement => {
   return (
     <div className="w-full border-b border-black mobile:border-none">
       <section
-        className="px-80 mobile:px-5 laptop:px-10 py-20 flex flex-col"
+        className="px-60 mobile:px-0 laptop:px-10 py-20 mobile:py-0 flex flex-col items-center w-full min-h-screen bg-cover bg-center bg-no-repeat relative pt-24"
         ref={sectionRef}
       >
-        <section
-          className={`flex mobile:flex-col items-start mobile:items-center w-full pr-40 mobile:pr-0 laptop:pr-0 gap-10 relative transition-all duration-1000 ease-out transform ${
+        <div
+          className="absolute inset-0 bg-black opacity-40 z-0"
+          style={{
+            backgroundImage: "url('/images/about-section-bg.png')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        />
+        <div
+          className={`flex mobile:flex-col bg-background shadow-custom rounded-3xl w-full z-10 relative mobile:bg-inherit mobile:shadow-none transition-all duration-1000 ease-out transform ${
             isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
           }`}
         >
-          <div className="flex flex-col gap-2 flex-1">
-            <h2 className="font-ppHatton text-black text-xl tracking-[2px] p-0 m-0 mobile:text-center">
-              {t("title")}
-            </h2>
-            <span className="font-ppHatton text-black text-ml mobile:text-center">
-              {t("subtitle")}
-            </span>
-            <span className="text-black text-ml laptop:text-m mobile:text-center w-[50%] mobile:w-full font-light pt-16 mobile:pt-12">
+          <section className="w-full relative mobile:h-[500px]">
+            <Image
+              src="/images/footer-img.webp"
+              alt="Esoteric background. About section."
+              fill
+              className="rounded-tl-3xl rounded-bl-3xl mobile:rounded-none"
+            />
+            <Image
+              src="/images/tipografia2.svg"
+              alt="Esoteric background. About section."
+              className={`rounded-tl-3xl rounded-bl-3xl z-50 absolute top-[15%] left-[12%] mobile:w-96 mobile:left-0 mobile:top-10 transition-all duration-1000 ease-out transform ${
+                isVisible
+                  ? "translate-y-0 opacity-100"
+                  : "translate-y-20 opacity-0"
+              }`}
+              width={500}
+              height={300}
+            />
+          </section>
+          <section
+            className={`flex flex-col items-center mobile:px-5 px-16 py-10 w-full laptop:pr-0 gap-10 relative transition-all duration-1000 ease-out transform ${
+              isVisible
+                ? "translate-y-0 opacity-100"
+                : "translate-y-20 opacity-0"
+            }`}
+          >
+            <Image
+              src="/icons/ICONOSHOMEVERDE-14.svg"
+              alt="Esoteric sun. About section."
+              width={300}
+              height={300}
+              className="object-contain"
+            />
+            <span className="text-black text-m laptop:text-m text-center w-4/5 mobile:w-full font-light ">
               {t("top-text")}
             </span>
-          </div>
-          <div className="flex justify-center items-center mobile:w-72 mobile:h-64 w-[450px] h-[450px] laptop:w-96 absolute right-48 laptop:right-16 mobile:right-0 mobile:pt-4 laptop:top-0 mobile:relative">
-            <Image
-              src="/icons/sun-about.svg"
-              alt="Esoteric sun. About section."
-              width={450}
-              height={400}
-              className="object-contain"
-            />
-          </div>
-        </section>
-        <section
-          className={`flex mobile:flex-col-reverse items-center justify-between w-full pr-40 laptop:pr-0 mobile:pr-0 gap-32 mobile:gap-0 relative  transition-all duration-1000 ease-out transform ${
-            isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
-          }`}
-        >
-          <div className="flex justify-center items-center mobile:w-72 mobile:h-64 w-[450px] h-[450px] laptop:w-96 absolute mobile:relative laptop:left-16 top-24 laptop:top-8 mobile:top-8">
-            <Image
-              src="/icons/star-about.svg"
-              alt="Esoteric sun. About section."
-              width={450}
-              height={400}
-              className="object-contain"
-            />
-          </div>
-          <div className="flex justify-end gap-10 flex-1 pt-56 mobile:pt-16">
-            <span className="text-black text-ml laptop:text-m font-light w-[50%] mobile:w-full mobile:text-center">
+            <span className="text-black text-m laptop:text-m font-light w-4/5 mobile:w-full text-center">
               {t("bottom-text")}
             </span>
-          </div>
-        </section>
-        <div className="w-full flex flex-col items-center justify-center pt-40 mobile:pt-20 text-ml mobile:text-m">
-          <span className="font-ppHatton font-bold text-black text-center tracking-[1px]">
-            {t("close-text-top")}
-          </span>
-          <span className="font-ppHatton font-bold text-black text-center tracking-[1px]">
-            {t("close-text-bottom")}
-          </span>
+            <div className="w-full flex flex-col items-center justify-center pt-5 text-m mobile:text-m">
+              <span className="font-ppHatton font-bold text-black text-center tracking-[1px]">
+                {t("close-text-top")}
+              </span>
+              <span className="font-ppHatton font-bold text-black text-center tracking-[1px]">
+                {t("close-text-bottom")}
+              </span>
+            </div>
+          </section>
         </div>
       </section>
     </div>
