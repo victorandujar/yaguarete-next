@@ -43,7 +43,10 @@ const Header = (): React.ReactElement => {
       <div className="flex gap-16 mobile:gap-8 items-start ">
         <ul className="flex gap-20 mobile:hidden">
           {headerSections.map((section: HeaderSection) => (
-            <li key={section.id}>
+            <li
+              key={section.id}
+              className={`${path.includes(section.name) && "font-bold"}`}
+            >
               <Link
                 href={section.link}
                 className="text-mss uppercase tracking-widest"

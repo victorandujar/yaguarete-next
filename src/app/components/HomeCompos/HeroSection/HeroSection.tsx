@@ -57,13 +57,13 @@ const HeroSection = (): React.ReactElement => {
             alt=""
             width={isMobile ? 200 : 400}
             height={400}
-            className={`absolute top-32 transition-opacity duration-1000 ${
+            className={`absolute top-32 laptop:top-2 transition-opacity duration-1000 ${
               showSun ? "opacity-100" : "opacity-0"
             }`}
           />
         )}
         <div
-          className={`absolute mobile:top-48 top-96 flex flex-col items-center transition-opacity duration-1000 ${
+          className={`absolute laptop:top-48 mobile:top-48 top-96 flex flex-col items-center transition-opacity duration-1000 ${
             showYaguarete ? "opacity-100" : "opacity-0"
           }`}
         >

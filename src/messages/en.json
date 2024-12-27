@@ -14,7 +14,10 @@
     "top-text": "In the heart of the jungle, where the trees whisper ancient stories and the sun dances through the leaves, Yaguareté is born: a mystical refuge for the soul and the senses. Inspired by the strength and wisdom of the jaguar, this space is a portal to calm, introspection, and connection with the essential.",
     "bottom-text": "Here, every aroma, every flavor, and every moment is infused with the magic of nature. We invite you to leave behind the noise of the world and rediscover the power of the present, as the jaguar spirit guides you on a unique journey.",
     "close-text-top": "Be present | Breath | Enjoy",
-    "close-text-bottom": "The jungle awaits"
+    "close-text-bottom": "The jungle awaits",
+    "sit": "Be present ",
+    "breath": "Breath",
+    "enjoy": "Enjoy"
   },
   "AboutSection": {
     "title": "About us",
@@ -22,7 +25,7 @@
     "top-text": "Yaguareté was born from a shared dream, woven between the jungle and the soul. The union of two loves: one person’s fascination with the esoteric, the mystical, and the intangible, and another’s deep connection to nature, its strength and serenity.",
     "bottom-text": "This space was conceived as a refuge where these two energies intertwine. Inspired by the jaguar, the guardian of the sacred in ancestral cultures, Yaguareté is a place of transformation, connection, and rest. Here, the jaguar spirit and the jungle sun remind us that we are one with the universe, and that true magic happens when we pause to listen.",
     "close-text-top": "Yaguareté is not just a café.",
-    "close-text-bottom": "It is an experience, a meeting, a whisper of the jungle inviting you back to yourself."
+    "close-text-bottom": "It is an experience & a meeting inviting you back to yourself."
   },
   "CallToAction": {
     "title": "Feed your body and soul under the jungle sun.",
