@@ -31,9 +31,52 @@ const config: Config = {
         ppHatton: ["PPHatton", "sans-serif"],
         nunito: "var(--font-nunitoSans)",
       },
+      animation: {
+        smoke: "smoke 30s infinite ",
+        move: "move 6s infinite ease-in-out",
+        moveReverse: "move-reverse 6s infinite ease-in-out",
+        "water-motion": "wave 8s infinite linear",
+      },
+      keyframes: {
+        smoke: {
+          "0%": { transform: "translate(0, 0) scale(1)" },
+          "10%": { transform: "translate(-10px, 15px) scale(1.05)" },
+          "20%": { transform: "translate(25px, -20px) scale(1.5)" },
+          "30%": { transform: "translate(-30px, 10px) scale(0.95)" },
+          "40%": { transform: "translate(15px, 25px) scale(1.15)" },
+          "50%": { transform: "translate(-20px, -25px) scale(1.35)" },
+          "60%": { transform: "translate(30px, 15px) scale(1)" },
+          "70%": { transform: "translate(-25px, -10px) scale(1.4)" },
+          "80%": { transform: "translate(20px, -15px) scale(0.9)" },
+          "90%": { transform: "translate(-15px, 30px) scale(1.4)" },
+          "100%": { transform: "translate(0, 0) scale(1)" },
+        },
+        move: {
+          "0%": { transform: "translate(0, 0) scale(1)" },
+          "50%": { transform: "translate(20px, -15px) scale(1.1)" },
+          "100%": { transform: "translate(0, 0) scale(1)" },
+        },
+        moveReverse: {
+          "0%": { transform: "translate(0, 0) scale(1)" },
+          "50%": { transform: "translate(-20px, 15px) scale(0.9)" },
+          "100%": { transform: "translate(0, 0) scale(1)" },
+        },
+        wave: {
+          "0%": { transform: "translateX(0)" },
+          "50%": { transform: "translateX(-50px)" },
+          "100%": { transform: "translateX(0)" },
+        },
+      },
       screens: {
-        laptop: "1024px", // Definir un breakpoint personalizado
-        mobile: { max: "800px" }, // Otro breakpoint personalizado
+        laptop: { max: "1400px" },
+        mobile: { max: "800px" },
+      },
+      boxShadow: {
+        custom: "0px 0px 20px 0.2em rgba(0, 0, 0, 0.3)",
+      },
+      backgroundImage: {
+        "water-effect":
+          "radial-gradient(circle, rgba(105,105,105,0.5) 20%, rgba(0,0,0,0.7) 80%)",
       },
     },
   },

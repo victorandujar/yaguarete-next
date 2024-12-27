@@ -7,6 +7,7 @@ import { RiCloseLargeFill } from "react-icons/ri";
 import Image from "next/image";
 import { IoIosArrowForward } from "react-icons/io";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 interface Props {
   isVisible: boolean;
@@ -15,6 +16,7 @@ interface Props {
 
 const SideBar = ({ isVisible, handleMenuOpen }: Props): React.ReactElement => {
   const t = useTranslations("Header");
+  const path = usePathname();
   const [animateItems, setAnimateItems] = useState(false);
 
   useEffect(() => {
@@ -52,7 +54,7 @@ const SideBar = ({ isVisible, handleMenuOpen }: Props): React.ReactElement => {
         <ul className="flex flex-col gap-5 w-full mt-16 px-4">
           {headerSections.map((section, index) => (
             <li
-              className={`w-full px-2 py-5 border-b border-black last:border-none transform transition-all duration-500 ease-in-out  ${
+              className={`w-full px-2 py-5 border-b border-black last:border-none transform transition-all duration-500 ease-in-out ${path.includes(section.name) && "font-bold"}  ${
                 animateItems
                   ? "translate-x-0 opacity-100"
                   : "translate-x-20 opacity-0"
