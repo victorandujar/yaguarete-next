@@ -20,6 +20,7 @@ const config: Config = {
         m: "var(--font-M)",
         ml: "var(--font-ML)",
         s: "var(--font-S)",
+        xs: "var(--font-XS)",
         ms: "var(--font-MS)",
         mss: "var(--font-MSS)",
       },

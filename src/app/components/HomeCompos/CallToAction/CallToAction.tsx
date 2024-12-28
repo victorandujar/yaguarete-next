@@ -54,7 +54,7 @@ const CallToAction = (): React.ReactElement => {
         backgroundImage: isMobile
           ? "url('/images/callToAction-mobile-img.webp')"
           : "",
-        backgroundSize: "contain",
+        backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
       }}
@@ -65,7 +65,7 @@ const CallToAction = (): React.ReactElement => {
             <Image
               src={images[currentImageIndex].src}
               alt="About photo. Jungle leaves"
-              layout="fill"
+              fill
               className="object-cover rounded-lg"
               loading="lazy"
             />
@@ -83,8 +83,8 @@ const CallToAction = (): React.ReactElement => {
           </div>
         </div>
       </div>
-      <div className="p-20 py-10 w-1/2 border-l text-black mobile:text-white mobile:text-center border-black mobile:border-none flex flex-col justify-between mobile:w-full  mobile:p-0">
-        <section className="flex flex-col mobile:flex-col-reverse gap-10 mobile:gap-64 w-4/5 pt-16 mobile:px-2 mobile:py-8 mobile:pt-8 mobile:pb-8 mobile:w-full">
+      <div className="p-20 py-10 mobile:py-0 w-1/2 border-l text-black mobile:text-white mobile:text-center border-black mobile:border-none flex flex-col justify-between mobile:w-full mobile:p-0">
+        <section className="flex flex-col mobile:flex-col-reverse gap-10 mobile:gap-64 w-4/5 pt-16 mobile:px-2 mobile:py-8 mobile:pt-5 mobile:pb-8 mobile:w-full">
           <span className="font-ppHatton text-l mobile:text-ml">
             {t("title")}
           </span>
