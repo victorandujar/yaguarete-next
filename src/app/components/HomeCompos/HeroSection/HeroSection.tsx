@@ -60,6 +60,7 @@ const HeroSection = (): React.ReactElement => {
             className={`absolute top-32 laptop:top-2 transition-opacity duration-1000 ${
               showSun ? "opacity-100" : "opacity-0"
             }`}
+            loading="lazy"
           />
         )}
         <div
@@ -77,6 +78,7 @@ const HeroSection = (): React.ReactElement => {
             width={isMobile ? 200 : 900}
             height={600}
             className="relative"
+            loading="lazy"
           />
           <span className="mobile:w-[220px] tracking-[10px] text-background uppercase absolute top-56 mobile:text-s mobile:tracking-[4px] mobile:bg-softGray mobile:py-1 mobile:rounded-2xl mobile:text-black text-center">
             · esoteric cafe ·
