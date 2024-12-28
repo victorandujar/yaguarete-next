@@ -85,7 +85,7 @@ const WelcomeSection = (): React.ReactElement => {
           <span className="mobile:text-center">{t("bottom-text")}</span>
         </section>
         <section className="font-ppHatton text-black flex flex-col mobile:items-center gap-10 pt-20 mobile:pt-5 text-ml">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between mobile:hidden">
             {highLights.map((highLight, index) => (
               <div key={highLight} className="flex items-center gap-24">
                 <span className="uppercase tracking-[2px]">{t(highLight)}</span>
