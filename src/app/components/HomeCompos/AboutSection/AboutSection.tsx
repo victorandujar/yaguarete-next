@@ -59,7 +59,7 @@ const AboutSection = (): React.ReactElement => {
             <Image
               src="/images/tipografia2.svg"
               alt="Esoteric background. About section."
-              className={`rounded-tl-3xl rounded-bl-3xl z-50 absolute top-[15%] left-[12%] mobile:w-96 mobile:left-0 mobile:top-10 transition-all duration-1000 ease-out transform ${
+              className={`rounded-tl-3xl rounded-bl-3xl z-50 absolute top-[15%] left-[12%] mobile:w-96 mobile:left-1 mobile:top-10 transition-all duration-1000 ease-out transform ${
                 isVisible
                   ? "translate-y-0 opacity-100"
                   : "translate-y-20 opacity-0"
@@ -76,7 +76,7 @@ const AboutSection = (): React.ReactElement => {
             }`}
           >
             <Image
-              src="/icons/ICONOSHOMEVERDE-14.svg"
+              src="/icons/sun-about.svg"
               alt="Esoteric sun. About section."
               width={300}
               height={300}
@@ -88,7 +88,7 @@ const AboutSection = (): React.ReactElement => {
             <span className="text-black text-m laptop:text-m font-light w-4/5 mobile:w-full text-center">
               {t("bottom-text")}
             </span>
-            <div className="w-full flex flex-col items-center justify-center pt-5 text-m mobile:text-m">
+            <div className="w-full flex flex-col items-center justify-center pt-5 text-ms ">
               <span className="font-ppHatton font-bold text-black text-center tracking-[1px]">
                 {t("close-text-top")}
               </span>

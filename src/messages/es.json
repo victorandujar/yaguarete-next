@@ -35,7 +35,11 @@
   },
   "Information": {
     "contact": "Contacto",
-    "newsletter": "Newsletter"
+    "newsletter": "Newsletter",
+    "follow": "Síguenos",
+    "information": "Información",
+    "visit": "Vísitanos",
+    "come-visit": "Aquí te esperamos"
   },
   "Menu": {
     "title": "Nuestro Menú",
