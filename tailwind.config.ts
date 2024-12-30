@@ -37,6 +37,7 @@ const config: Config = {
         move: "move 6s infinite ease-in-out",
         moveReverse: "move-reverse 6s infinite ease-in-out",
         "water-motion": "wave 8s infinite linear",
+        marquee: "marquee 20s linear infinite",
       },
       keyframes: {
         smoke: {
@@ -67,6 +68,10 @@ const config: Config = {
           "50%": { transform: "translateX(-50px)" },
           "100%": { transform: "translateX(0)" },
         },
+        marquee: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
       },
       screens: {
         laptop: { max: "1400px" },
@@ -79,8 +84,25 @@ const config: Config = {
         "water-effect":
           "radial-gradient(circle, rgba(105,105,105,0.5) 20%, rgba(0,0,0,0.7) 80%)",
       },
+      perspective: {
+        "1000": "1000px",
+      },
+      translate: {
+        "z-300": "300px",
+      },
+      rotate: {
+        "y-0": "0deg",
+        "y-90": "90deg",
+        "y-180": "180deg",
+        "y-270": "270deg",
+        "y-360": "360deg",
+      },
+      transformStyle: {
+        preserve: "preserve-3d",
+      },
     },
   },
   plugins: [],
 };
+
 export default config;
