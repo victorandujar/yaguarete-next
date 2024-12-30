@@ -5,7 +5,7 @@ export const headerSections: HeaderSection[] = [
   {
     id: 1,
     name: "events",
-    link: "",
+    link: paths.events,
   },
   // {
   //   id: 2,

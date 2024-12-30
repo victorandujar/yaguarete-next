@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { images } from "./utils/images";
-import { CallToActionImage } from "@/interfaces/Images";
+import { ImageStructure } from "@/interfaces/Images";
 
 const CallToAction = (): React.ReactElement => {
   const t = useTranslations("CallToAction");
@@ -115,7 +115,7 @@ const CallToAction = (): React.ReactElement => {
           />
         </div>
         <div className="flex gap-2 pt-7">
-          {images.map((image: CallToActionImage, index: number) => (
+          {images.map((image: ImageStructure, index: number) => (
             <button
               key={image.id}
               className={`w-8 h-2 rounded-3xl border-2 border-gray-500 ${
