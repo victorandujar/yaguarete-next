@@ -35,7 +35,11 @@
   },
   "Information": {
     "contact": "Contacto",
-    "newsletter": "Newsletter"
+    "newsletter": "Newsletter",
+    "follow": "Síguenos",
+    "information": "Información",
+    "visit": "Vísitanos",
+    "come-visit": "Aquí te esperamos"
   },
   "Menu": {
     "title": "Nuestro Menú",
@@ -45,5 +49,17 @@
     "bottom-text": "Explora la esencia de nuestra cocina. Descarga el menú y descubre una experiencia llena de sabor y cuidado en cada detalle.",
     "menu": "Menú",
     "download": "Clica aquí para descargar el menú"
+  },
+  "Events": {
+    "title": "Nuestros Eventos",
+    "subtitle": "Te invitamos a conectar con los ciclos del universo",
+    "main-text": "En Yaguareté, creemos en la magia de los ciclos naturales, en la energía del sol, la luna y las estaciones. Por eso, nuestros eventos son celebraciones que honran el vínculo entre la naturaleza, la espiritualidad y la comunidad.",
+    "top-text": "Para nosotros, cada ocasión es un ritual en sí mismo. Durante los eventos, te invitamos a disfrutar de un menú especial creado con intención: bebidas diseñadas para alinearte con la energía del momento, infusiones cargadas de propósito y platos que narran historias a través de sus sabores, conectando cuerpo, alma y entorno.",
+    "title-middle": "En nuestros eventos encontrarás...",
+    "rituals": "Rituales y Ceremonias",
+    "tarot": "Tarot y Runas",
+    "food": "Comida y Bebidas",
+    "community": "Comunidad, Conexiones y Buena Onda",
+    "bottom-text": "Bajo el sol de la selva, donde el espíritu del jaguar guía cada paso, vive la experiencia Yaguareté: un encuentro con la naturaleza, el alma y la magia de lo esotérico."
   }
 }

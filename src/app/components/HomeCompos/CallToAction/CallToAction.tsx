@@ -2,15 +2,18 @@
 
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { images } from "./utils/images";
-import { CallToActionImage } from "@/interfaces/Images";
+import { ImageStructure } from "@/interfaces/Images";
 
 const CallToAction = (): React.ReactElement => {
   const t = useTranslations("CallToAction");
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+
+  const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     const handleResize = () => {
@@ -43,13 +46,33 @@ const CallToAction = (): React.ReactElement => {
     return () => clearTimeout(imageChangeTimer);
   }, [currentImageIndex]);
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+            observer.disconnect();
+          }
+        });
+      },
+      { threshold: 0.2 },
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   const handleOnClick = (index: number) => {
     setCurrentImageIndex(index);
   };
 
   return (
     <section
-      className="border-b border-black mobile:border-none w-full flex justify-center h-fit mobile:px-5"
+      className="pt-20 mobile:pb-20 flex-col border-b border-black mobile:border-none w-full flex justify-center h-fit mobile:px-5 relative overflow-hidden mobile:h-[600px]"
       style={{
         backgroundImage: isMobile
           ? "url('/images/callToAction-mobile-img.webp')"
@@ -58,43 +81,50 @@ const CallToAction = (): React.ReactElement => {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
       }}
+      ref={sectionRef}
     >
-      <div className="w-1/3 flex flex-col justify-center px-32 py-24  mobile:hidden">
-        <div className="relative flex flex-col items-center gap-6 min-h-[500px] ">
-          <div className="w-full h-full p-2 relative flex flex-col items-center justify-center gap-16 min-h-[500px]">
-            <Image
-              src={images[currentImageIndex].src}
-              alt="About photo. Jungle leaves"
-              fill
-              className="object-cover rounded-lg"
-              loading="lazy"
-            />
-          </div>
-          <div className="flex gap-2 pt-7">
-            {images.map((image: CallToActionImage, index: number) => (
-              <button
-                key={image.id}
-                className={`w-8 h-2 rounded-3xl border-2 border-gray-500 ${
-                  index === currentImageIndex ? "bg-black" : "bg-gray-300"
-                }`}
-                onClick={() => handleOnClick(index)}
-              />
-            ))}
-          </div>
-        </div>
-      </div>
-      <div className="p-20 py-10 mobile:py-0 w-1/2 border-l text-black mobile:text-white mobile:text-center border-black mobile:border-none flex flex-col justify-between mobile:w-full mobile:p-0">
-        <section className="flex flex-col mobile:flex-col-reverse gap-10 mobile:gap-64 w-4/5 pt-16 mobile:px-2 mobile:py-8 mobile:pt-5 mobile:pb-8 mobile:w-full">
+      <div
+        className={`w-full text-black mobile:text-white mobile:text-center mobile:border-none flex flex-col justify-between items-center mobile:w-full mobile:p-0 transition-all duration-1000 ease-out transform  ${
+          isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
+        }`}
+      >
+        <section className="flex flex-col mobile:flex-col-reverse items-center gap-10 mobile:gap-64 w-3/5 pt-5 mobile:px-2 mobile:py-8 mobile:pb-8 mobile:w-full">
           <span className="font-ppHatton text-l mobile:text-ml">
             {t("title")}
           </span>
-          <span className="text-l  font-light mobile:text-left">
+          <span className="text-l text-center font-light mobile:text-left">
             {t("top-text")}
           </span>
         </section>
-        <section className="font-ppHatton flex flex-col gap-3 pt-20 tracking-[2px] pb-32 mobile:hidden">
+        <section className="font-ppHatton flex flex-col gap-3 pt-20 tracking-[2px] pb-20 mobile:hidden">
           <span className="text-ml">{t("close-text-top")} </span>
         </section>
+      </div>
+      <div
+        className={`relative flex flex-col items-center gap-6 min-h-[500px] mobile:hidden transition-all duration-1000 ease-out transform  ${
+          isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
+        }`}
+      >
+        <div className="w-[500px] h-80 p-2 relative flex flex-col items-center justify-center gap-16 min-h-[100px] shadow-custom rounded-lg">
+          <Image
+            src={images[currentImageIndex].src}
+            alt="About photo. Jungle leaves"
+            fill
+            className="object-cover rounded-lg"
+            loading="lazy"
+          />
+        </div>
+        <div className="flex gap-2 pt-7">
+          {images.map((image: ImageStructure, index: number) => (
+            <button
+              key={image.id}
+              className={`w-8 h-2 rounded-3xl border-2 border-gray-500 ${
+                index === currentImageIndex ? "bg-black" : "bg-gray-300"
+              }`}
+              onClick={() => handleOnClick(index)}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );
