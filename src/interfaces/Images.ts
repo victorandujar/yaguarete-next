@@ -1,4 +1,4 @@
-export interface CallToActionImage {
+export interface ImageStructure {
   id: number;
   src: string;
 }
