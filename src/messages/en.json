@@ -35,7 +35,11 @@
   },
   "Information": {
     "contact": "Contact",
-    "newsletter": "Newsletter"
+    "newsletter": "Newsletter",
+    "follow": "Follow us",
+    "information": "Information",
+    "visit": "Visit us",
+    "come-visit": "Come to visit us"
   },
   "Menu": {
     "title": "Our Menu",
